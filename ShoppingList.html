@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping List</h1>
+        <nav>
+            <ul>
+                <li><a href="My-Budget.html">Budget</a></li>
+                <li><a href="ShoppingList.html">Shopping List</a></li>
+                <li><a href="SavingsTracker.html">Savings Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="shopping-list">
+            <h2>My Shopping List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Count</th>
+                        <th>Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="shopping-items">
+                    <tr>
+                        <td><input type="text" class="item-input" placeholder="Enter item"></td>
+                        <td><input type="number" class="count-input" placeholder="Enter count"></td>
+                        <td><input type="number" class="price-input" placeholder="Enter price"></td>
+                        <td class="total-price">$0.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Amount</td>
+                        <td id="total-amount">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="add-item">Add Item</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Budget App</p>
+    </footer>
+    <script src="shopping-list.js"></script>
+</body>
+</html>
+

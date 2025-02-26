@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Budget</h1>
+        <nav>
+            <ul>
+                <li><a href="My-Budget.html">Budget</a></li>
+                <li><a href="ShoppingList.html">Shopping List</a></li>
+                <li><a href="SavingsTracker.html">Savings Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="budget-table">
+            <h2>Budget Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="budget-items">
+                    <tr>
+                        <td><input type="text" class="item-input" placeholder="Enter item"></td>
+                        <td><input type="number" class="amount-input" placeholder="Enter amount"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total Expenditure</td>
+                        <td id="total-amount">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="add-row">Add Row</button>
+        </section>
+    <section id="budget-summary">
+        <h2>Budget Summary</h2>
+        <div class="summary-bar">
+            <div class="summary-item">
+                <label for="income-input">Income:</label>
+                <input type="number" id="income-input" placeholder="Enter income">
+            </div>
+            <div class="summary-item">
+                <span>Total Expenditure:</span>
+                <span id="total-expenditure">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Remaining:</span>
+                <span id="remaining-amount">$0.00</span>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Budget App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

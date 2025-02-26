@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Savings Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="My-Budget.html">Budget</a></li>
+                <li><a href="ShoppingList.html">Shopping List</a></li>
+                <li><a href="SavingsTracker.html">Savings Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="savings-tracker">
+            <h2>My Savings</h2>
+            <div class="savings-goal">
+                <label for="annual-goal">Annual Savings Goal:</label>
+                <input type="number" id="annual-goal" placeholder="Enter your annual savings goal">
+                <button id="set-goal">Set Goal</button>
+            </div>
+            <div class="monthly-goal">
+                <p>Monthly Saving Goal: <span id="monthly-goal">$0.00</span></p>
+            </div>
+            <div class="savings-progress">
+                <h3>Monthly Savings Tracker</h3>
+                <table id="monthly-tracker">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Done</th>
+                            <th>Not Done</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Months will be added here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Budget App</p>
+    </footer>
+    <script src="savings-tracker.js"></script>
+</body>
+</html>
+
