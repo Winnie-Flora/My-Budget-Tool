@@ -11,6 +11,7 @@
         <h1>Savings Tracker</h1>
         <nav>
             <ul>
+                <li><a href="Index.html">Home</a></li>
                 <li><a href="My-Budget.html">Budget</a></li>
                 <li><a href="ShoppingList.html">Shopping List</a></li>
                 <li><a href="SavingsTracker.html">Savings Tracker</a></li>
@@ -34,6 +35,7 @@
                     <thead>
                         <tr>
                             <th>Month</th>
+                            <th>Amount</th>
                             <th>Done</th>
                             <th>Not Done</th>
                         </tr>
@@ -41,9 +43,24 @@
                     <tbody>
                         <!-- Months will be added here by JavaScript -->
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total Annual Savings</td>
+                            <td id="total-annual-savings">$0.00</td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
+            <div class="goal-progress">
+                <h3>Progress Towards Goal</h3>
+                <div class="progress-bar">
+                    <div class="progress" id="goal-progress-bar"></div>
+                </div>
+                <p>Remaining to Goal: <span id="remaining-to-goal">$0.00</span></p>
+            </div>
         </section>
+        <button id="print-savings-tracker">Print Savings Tracker</button>
     </main>
     <footer>
         <p>&copy; 2025 Budget App</p>
